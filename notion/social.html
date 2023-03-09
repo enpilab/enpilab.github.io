@@ -123,6 +123,11 @@
             background-color: #ef8403;
         }
 
+        .github:hover,
+        .github::after {
+            background-color: #000000;
+        }
+
         .social {
             position: relative;
             margin: 10px;
@@ -139,7 +144,12 @@
 <body>
     <div class="wrapper">
 
-
+        
+        <!-- Start email Icon -->
+        <div id="email" onclick="navigate(this.id)" class="fill email">
+            <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+        </div>
+        <!-- End email Icon -->
         <!-- Start linkedin Icon -->
         <div id="linkedin" onclick="navigate(this.id)" class="fill linkedin">
             <span class="icon"><i class="fab fa-linkedin"></i></span>
@@ -155,11 +165,11 @@
             <span class="icon"><i class="fab fa-stack-overflow"></i></span>
         </div>
         <!-- End stack-overflow Icon -->
-        <!-- Start email Icon -->
-        <div id="email" onclick="navigate(this.id)" class="fill email">
-            <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+        <!-- Start github Icon -->
+        <div id="github" onclick="navigate(this.id)" class="fill github">
+            <span class="icon"><i class="fab fa-github"></i></span>
         </div>
-        <!-- End email Icon -->
+        <!-- End github Icon -->
 
     </div>
 
@@ -201,6 +211,9 @@
             // else if (id === "telegram") {
             //     window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
             // }
+            else if (id === "github") {
+                window.open("https://github.com/thangphuocnguyen", '_blank').focus(); //Add the url to your telegram account
+            }
         }
 
     </script>
